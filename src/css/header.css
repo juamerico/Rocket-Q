@@ -1,0 +1,5 @@
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+    width: 80%;
+    margin: 3.5rem auto;
+}

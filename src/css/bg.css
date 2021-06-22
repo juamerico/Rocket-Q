@@ -1,0 +1,25 @@
+.bg {
+    grid-area: 2 / 1 / 3 / 2;
+    background: url("../img/home-bg-img.svg") no-repeat top/contain;
+    background-position-x: -10rem;
+}
+
+.circle {
+    clip-path: circle();
+    background-color: var(--light-blue);
+    position: fixed;
+}
+
+.circle.top {
+    width: 63.3rem;
+    height: 63.3rem;
+    top: -70vh;
+    width: 220vw;
+}
+
+.circle.bottom {
+    width: 20rem;
+    height: 20rem;
+    top: 95vh;
+    left: 80vw;
+}

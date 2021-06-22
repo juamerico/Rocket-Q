@@ -1,0 +1,21 @@
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+
+.separator div:first-child,
+.separator div:last-child {
+    background-color: var(--grey-blue);
+    height: 1px;
+    width: 100%;
+}
+
+.separator div:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--grey-blue);
+    padding: 0 1.35rem;
+    line-height: 0;
+}

@@ -1,0 +1,22 @@
+.content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem auto;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+main .container {
+    grid-area: 2 / 2 / 3 / 3; 
+    width: min(36.3rem, 100%);
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: clamp(20px 5vw 2.8rem);
+    margin-bottom: 2.4rem;
+}
