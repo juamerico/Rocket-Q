@@ -13,7 +13,7 @@
     border: .2rem solid var(--grey-blue);
 }
 
-.login__btn, .room-pass__btn {
+.login__btn, .room-pass__btn, .submit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,4 +32,5 @@
 .btn--icon {
     width: 2rem;
     margin-right: 1rem;
+    cursor: pointer;
 }

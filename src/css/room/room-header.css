@@ -1,0 +1,12 @@
+.header {
+    width: 97.5%;
+    margin: 3.5rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#room {
+    max-width: min(112rem, 90%);
+}
