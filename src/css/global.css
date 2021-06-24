@@ -38,6 +38,10 @@ body, button, input, textarea {
     font-family: 'Poppins', sans-serif;
 }
 
+a, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+
 .sr-only {
     position: absolute;
     height: 1px;

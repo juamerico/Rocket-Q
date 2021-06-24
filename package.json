@@ -1,0 +1,28 @@
+{
+  "name": "discover",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para gerenciar perguntas anônimas de usuários direcionadas ao dono da página. Projeto desenvolvido durante a semana NLW Rockeseat na missão Discover",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juamerico/Rocket-Q.git"
+  },
+  "keywords": [],
+  "author": "Juliana Américo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juamerico/Rocket-Q/issues"
+  },
+  "homepage": "https://github.com/juamerico/Rocket-Q#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

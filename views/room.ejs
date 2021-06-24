@@ -8,13 +8,14 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="src/css/global.css">
-        <link rel="stylesheet" href="src/css/btn.css">
-        <link rel="stylesheet" href="src/css/room/room-header.css">
-        <link rel="stylesheet" href="src/css/room/room-btn.css">
-        <link rel="stylesheet" href="src/css/create-room.css">
-        <link rel="stylesheet" href="src/css/room/question-form.css">
-        <link rel="stylesheet" href="src/css/room/question.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/btn.css">
+        <link rel="stylesheet" href="css/room/room-header.css">
+        <link rel="stylesheet" href="css/room/room-btn.css">
+        <link rel="stylesheet" href="css/create-room.css">
+        <link rel="stylesheet" href="css/room/question-form.css">
+        <link rel="stylesheet" href="css/room/question.css">
+        <link rel="stylesheet" href="css/room/modal.css">
 
         <title>Rocket.Q - Perguntas</title>
     </head>
@@ -22,14 +23,14 @@
     <body>
         <div class="content" id="room">
             <header class="header">
-                <img src="src/img/logo.svg" alt="Logo Rocket.Q" class="logo">
+                <img src="img/logo.svg" alt="Logo Rocket.Q" class="logo">
 
                 <div class="btns">
                     <div class="create-room__btn btn">
-                        #323243<img src="src/img/copy.svg" alt="Copiar código" class="create-room__btn--icon btn--icon">
+                        #323243<img src="img/copy.svg" alt="Copiar código" class="create-room__btn--icon btn--icon">
                     </div>
                     <div class="room-pass__btn btn">
-                        <img src="src/img/users-white.svg" alt="Criar sala" class="room-pass__btn--icon">Criar sala
+                        <img src="img/users-white.svg" alt="Criar sala" class="room-pass__btn--icon">Criar sala
                     </div>
                 </div>
             </header>
@@ -44,7 +45,7 @@
 
                         <footer class="question-form__footer">
                             <div class="question-form__footer--container">
-                                <img src="src/img/lock-black.svg" alt="Cadeado" class="question-form__icon">
+                                <img src="img/lock-black.svg" alt="Cadeado" class="question-form__icon">
                                 <span class="question-form__info">Esta pergunta é anônima</span>
                             </div>
                             <button class="question-form__btn submit btn">Enviar</button>
@@ -59,7 +60,7 @@
                     <div class="question-wrapper">
                         <div class="question">
                             <div class="question__user">
-                                <img src="src/img/user.svg" alt="Avatar" class="question__user-img">
+                                <img src="img/user.svg" alt="Avatar" class="question__user-img">
                             </div>
                             
                             <div class="question__content">
@@ -69,12 +70,12 @@
 
                         <div class="question__actions">
                             <a href="#">
-                                <img class="question__actions--img" src="./src/img/check.svg" alt="Check"/>
+                                <img class="question__actions--img" src="./img/check.svg" alt="Check"/>
                                 Marcar como lida
                             </a>
 
                             <a href="#">
-                                <img class="question__actions--img" src="./src/img/trash.svg" alt="Lixeira"/>
+                                <img class="question__actions--img" src="./img/trash.svg" alt="Lixeira"/>
                                 Excluir
                             </a>
                         </div>
@@ -83,7 +84,7 @@
                     <div class="question-wrapper">
                         <div class="question">
                             <div class="question__user">
-                                <img src="src/img/user.svg" alt="Avatar" class="question__user-img">
+                                <img src="img/user.svg" alt="Avatar" class="question__user-img">
                             </div>
                             
                             <div class="question__content">
@@ -93,12 +94,12 @@
 
                         <div class="question__actions">
                             <a href="#">
-                                <img class="question__actions--img" src="./src/img/check.svg" alt="Check"/>
+                                <img class="question__actions--img" src="./img/check.svg" alt="Check"/>
                                 Marcar como lida
                             </a>
 
                             <a href="#">
-                                <img class="question__actions--img" src="./src/img/trash.svg" alt="Lixeira"/>
+                                <img class="question__actions--img" src="./img/trash.svg" alt="Lixeira"/>
                                 Excluir
                             </a>
                         </div>
@@ -107,7 +108,7 @@
                     <div class="question-wrapper read">
                         <div class="question">
                             <div class="question__user">
-                                <img src="src/img/user.svg" alt="Avatar" class="question__user-img">
+                                <img src="img/user.svg" alt="Avatar" class="question__user-img">
                             </div>
 
                             <div class="question__content">
@@ -117,14 +118,31 @@
 
                         <div class="question__actions">
                             <a href="#">
-                                <img class="question__actions--img" src="./src/img/check.svg" alt="Check"/>
+                                <img class="question__actions--img" src="./img/check.svg" alt="Check"/>
                                 Marcar como lida
                             </a>
 
                             <a href="#">
-                                <img class="question__actions--img" src="./src/img/trash.svg" alt="Lixeira"/>
+                                <img class="question__actions--img" src="./img/trash.svg" alt="Lixeira"/>
                                 Excluir
                             </a>
+                        </div>
+                    </div>
+
+                    <div class="modal-wapper">
+                        <div class="modal">
+                            <h2 class="modal__titulo">Excluir pergunta</h2>
+                            <p class="modal__descricao">Tem certeza que você deseja excluir esta pergunta?</p>
+
+                            <form class="modal__form">
+                                <label for="password" class="sr-only">Digite sua senha</label>
+                                <input id="password" class="inpt" type="password" name="password" placeholder="Digite sua senha">
+
+                                <div class="modal__form--btns">
+                                    <div class="modal__form--cancel-btn btn">Cancelar</div>
+                                    <button class="modal__form--confirm-btn btn" >Sim, excluir</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
 

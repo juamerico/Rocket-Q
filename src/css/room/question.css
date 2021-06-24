@@ -50,6 +50,7 @@
 .question__actions > a {
     display: flex;
     align-items: center;
+    color: var(--grey-dark);
 }
 
 .question__actions > a + a {
