@@ -1,6 +1,6 @@
 .header {
-    width: 90%;
-    margin: 3.5rem 0;
+    width: auto;
+    margin: 3.5rem;
 
     display: flex;
     align-items: center;

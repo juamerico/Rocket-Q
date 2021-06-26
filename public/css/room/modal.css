@@ -1,9 +1,9 @@
-.modal-wapper.active {
+.modal-wrapper.active {
     visibility: visible;
     opacity: 1;
 }
 
-.modal-wapper {
+.modal-wrapper {
     position: fixed;
     display: flex;
 
@@ -30,14 +30,14 @@
     align-items: center;
 }
 
-.modal__titulo {
+.modal__title {
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
     color: var(--black);
 }
 
-.modal__descricao {
+.modal__description {
     margin-bottom: 2.4rem;
     color: var(--grey-dark);
 }
@@ -47,12 +47,9 @@
     margin-bottom: 0;
 }
 
-.modal__form {
-    width: min(30.2rem, 70%);
-}
-
 #password {
     margin-bottom: 4rem;
+    width: 35rem;
 }
 
 .modal__form--btns {

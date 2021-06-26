@@ -8,6 +8,7 @@
     font-weight: 500;
     line-height: 0;
     outline: none;
+    cursor: pointer;
 }
 
 .inpt {

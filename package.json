@@ -2,7 +2,7 @@
   "name": "discover",
   "version": "1.0.0",
   "description": "Projeto desenvolvido para gerenciar perguntas anônimas de usuários direcionadas ao dono da página. Projeto desenvolvido durante a semana NLW Rockeseat na missão Discover",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1"
