@@ -32,7 +32,7 @@ function handleClick(e, check = true) {
     const questionId = e.target.dataset.id
     const slug = check ? "check" : "delete"
     
-    form.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`)
+    form.setAttribute("action", `/questions/${roomId}/${questionId}/${slug}`)
     
     const text = check ? "Marcar como lida" : "Excluir"
     modalTitle.innerHTML = `${text} esta pergunta`
