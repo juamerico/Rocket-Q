@@ -25,18 +25,14 @@ module.exports = {
             }
             res.redirect(`/room/${roomId}`)
         } else{
-            console.log(roomId.pass)
             res.render('passincorrect', {roomId: roomId})
         }
-
-
     },
 
     async create(req, res){
         const db = await Database()
         const question = req.body.question
         const roomId = req.params.room
-        console.log(`room id do create: ${roomId.pass}`)
 
         await db.run(`INSERT INTO questions(
             title,
