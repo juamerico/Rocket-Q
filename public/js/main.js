@@ -8,8 +8,6 @@ const modalTitle = document.querySelector(".modal__title")
 const modalDescription = document.querySelector(".modal__description")
 const confirmButton = document.querySelector(".modal__form--confirm-btn")
 
-
-
 checkButtons.forEach(button => {
     button.addEventListener("click", handleClick)
 })
@@ -32,7 +30,7 @@ function handleClick(e, check = true) {
     const questionId = e.target.dataset.id
     const slug = check ? "check" : "delete"
     
-    form.setAttribute("action", `/questions/${roomId}/${questionId}/${slug}`)
+    form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`)
     
     const text = check ? "Marcar como lida" : "Excluir"
     modalTitle.innerHTML = `${text} esta pergunta`
