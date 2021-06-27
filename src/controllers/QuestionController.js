@@ -8,9 +8,6 @@ module.exports = {
         const questionId = req.params.question
         const action = req.params.action
         const password = req.body.password
-
-        console.log(`senha digitada: ${password}`)
-        console.log(`senha da sala: ${roomId.pass}`)
                
         const verifyRoom = await db.get(`SELECT * FROM rooms WHERE id = ${roomId}`)
         if(verifyRoom.pass === password) {
