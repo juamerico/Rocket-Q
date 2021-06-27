@@ -77,7 +77,7 @@
                                 </div>
                             </div>
 
-                            <div class="question__actions">
+                            <div class="question__actions"> 
                                 <a class="question__actions--check check" href="#" data-id="<%= question.id %>">
                                     <img class="question__actions--img" src="/./img/check.svg" alt="Check"/>
                                     Marcar como lida
@@ -100,25 +100,18 @@
                                 </div>
 
                                 <div class="question__content">
-                                    <p><%= questionsRead.title %></p>
+                                    <p><%= questionRead.title %></p>
                                 </div>
                             </div>
 
                             <div class="question__actions">
-                                <a class="question__actions--check check" href="#" data-id="<%= questionsRead.id %>">
-                                    <img class="question__actions--img" src="/./img/check.svg" alt="Check"/>
-                                    Marcar como lida
-                                </a>
-
-                                <a class="question__actions--delete delete" href="#" data-id="<%= questionsRead.id %>">
+                                <a class="question__actions--delete delete" href="#" data-id="<%= questionRead.id %>">
                                     <img class="question__actions--img" src="/./img/trash.svg" alt="Lixeira"/>
                                     Excluir
                                 </a>
                             </div>
                         </div>
                     <% }) %>
-
-
 
                     <div class="modal-wrapper">
                         <div class="modal">
@@ -127,7 +120,7 @@
 
                             <form class="modal__form" method="POST">
                                 <label for="password" class="sr-only">Digite sua senha</label>
-                                <input id="password" class="inpt" type="password" placeholder="Digite sua senha">
+                                <input id="password" class="inpt" name="password" type="password" placeholder="Digite sua senha">
 
                                 <div class="modal__form--btns">
                                     <div class="modal__form--cancel-btn btn">Cancelar</div>

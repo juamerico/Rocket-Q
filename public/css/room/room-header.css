@@ -1,6 +1,6 @@
 .header {
-    width: auto;
-    margin: 3.5rem;
+    width: 100%;
+    padding: 3.5rem 0;
 
     display: flex;
     align-items: center;
@@ -8,5 +8,5 @@
 }
 
 #room {
-    max-width: min(112rem, 100%);
+    max-width: min(112rem, 90%);
 }
