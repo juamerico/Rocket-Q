@@ -31,11 +31,12 @@
 
                 <div class="btns">
                     <div class="create-room__btn btn" id="room-id" data-id="<%= roomId %>">
-                        #<%= roomId %><img src="/img/copy.svg" alt="Copiar código" class="create-room__btn--icon btn--icon">
+                        <span><input readonly value="<%= roomId %>" class="create-room__btn--textarea"></span>
+                        <img src="/img/copy.svg" alt="Copiar código" class="create-room__btn--icon btn--icon">
                     </div>
-                    <div class="room-pass__btn btn">
+                    <a href="/create-pass" class="room-pass__btn btn">
                         <img src="/img/users-white.svg" alt="Criar sala" class="room-pass__btn--icon">Criar sala
-                    </div>
+                    </a>
                 </div>
             </header>
 
@@ -133,5 +134,14 @@
                 </section>
             </main>
         </div>
+
+        <script>
+            const input = document.querySelector(".inpt")
+            const txtArea = document.querySelector(".question-form__input")
+            input.focus()
+            txtArea.focus()
+        </script>
+        <script src="/js/copyRoomId.js"></script>
+
     </body>
 </html>

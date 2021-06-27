@@ -13,7 +13,7 @@
 
 #room .create-room__btn {
     margin-right: .8rem;
-    width: 13rem !important;
+    width: auto;
     padding: 1.3rem 1.6rem 1.3rem 2.6rem;
 }
 
@@ -21,6 +21,30 @@
     margin: 0;
     width: 18rem;
     padding: 1.3rem 3.2rem;
+}
+
+#room .btns span::before {
+    content: "#";
+}
+
+#room .create-room__btn--textarea {
+    overflow: hidden;
+    padding: 0;
+    width: 6rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+#room .create-room__btn--textarea:hover,
+#room .create-room__btn--textarea:active,
+#room .create-room__btn--textarea:focus,
+#room .create-room__btn--textarea:visited {
+    outline: none;
 }
 
 #room .create-room__btn--icon {
