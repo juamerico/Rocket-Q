@@ -1,6 +1,15 @@
 .header {
-    grid-area: 1 / 1 / 2 / 3;
-    place-self: center;
-    width: min(112rem, 90%);
-    padding: 3.5rem 0;
+    width: 100%;
+    text-align: center;
+    padding: 3.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        grid-area: 1 / 1 / 2 / 3;
+        place-self: center;
+        width: min(112rem, 90%);
+        padding: 3.5rem 0;
+        text-align: left;
+    }
 }

@@ -1,5 +1,5 @@
 #questions {
-    margin-top: 1rem;
+    margin: 4rem 3.5rem;
 }
 
 .question-wrapper {
@@ -21,7 +21,7 @@
 .question__user img {
     background-color: var(--blue);
     clip-path: circle();
-    padding: 1.4rem;
+    padding: 1rem;
 }
 
 .question-wrapper.read .question__user-img {
@@ -55,6 +55,11 @@
 .question__actions > a + a {
     margin-left: 2.4rem;
 }
+
+.question__actions p {
+    display: none;
+}
+
 .question__actions--img{
     margin-right: .8rem;
 }
@@ -82,5 +87,19 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.9rem;
-    width: 277px;
+    width: min(277px, 80vw);
+}
+
+@media screen and (min-width: 1024px){
+    #questions {
+        margin: 1rem 0 4rem 0;
+    }
+
+    .question__user img {
+        padding: 1.4rem;
+    }
+
+    .question__actions p {
+        display: unset;
+    }
 }

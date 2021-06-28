@@ -1,17 +1,18 @@
 .content {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 11.4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+    
 main {
     display: flex;
     align-items: center;
+    padding: 0 4rem;
+    width: 100%;
 }
 
 main .container {
-    grid-area: 2 / 2 / 3 / 3; 
-    width: min(36.3rem, 100%);
+    width: 100%;
 }
 
 main h2 {
@@ -19,4 +20,27 @@ main h2 {
     color: var(--black);
     font-size: clamp(20px 5vw 2.8rem);
     margin-bottom: 2.4rem;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        width: auto;
+    }
+    
+    .content {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 11.4rem auto;
+    }
+
+    main .container {
+        grid-area: 2 / 2 / 3 / 3; 
+        width: min(36.3rem, 100%);
+    }
 }
