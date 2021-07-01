@@ -22,7 +22,9 @@ Em seguida, para inicializar o servidor execute o comando:\
 `npm start`
 
 #### Layout
-O layout inicial do projeto foi baseado [neste projeto](https://www.figma.com/file/vp3iFfd1ohCbHyDX9jCiQi/Roquet.q-%2302?node-id=0%3A1), porém futuras alterações serão implementadas.
+O layout inicial do projeto foi baseado [neste projeto](https://www.figma.com/file/vp3iFfd1ohCbHyDX9jCiQi/Roquet.q-%2302?node-id=0%3A1).\
+Para alternar entre o modo noturno e o original, basta clicar no ícone de lua no canto superior direito.\
+O projeto conta com versões mobile e tablet, adequeadas para telas de diferentes tamanhos.
 
 #### Tecnologias utilizadas
 - HTML
