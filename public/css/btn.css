@@ -36,3 +36,21 @@
     margin-right: 1rem;
     cursor: pointer;
 }
+
+.moon-icon {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .moon-icon {
+        width: min(3rem, 4vw);
+        height: min(3rem, 4vw);
+        margin-left: 2rem;
+        cursor: pointer;
+        position: static;
+    }
+}

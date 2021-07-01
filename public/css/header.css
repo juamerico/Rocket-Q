@@ -8,8 +8,12 @@
     .header {
         grid-area: 1 / 1 / 2 / 3;
         place-self: center;
+        align-self: center;
         width: min(112rem, 90%);
         padding: 3.5rem 0;
-        text-align: left;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }

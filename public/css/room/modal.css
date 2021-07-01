@@ -19,7 +19,7 @@
 
 .modal {
     width: min(59rem, 90%);
-    background-color: var(--white);
+    background-color: var(--bg-color);
     margin: auto;
     border-radius: .8rem;
     font-family: 'Poppins', sans-serif;
@@ -63,7 +63,7 @@
 }
 
 .modal__form--cancel-btn {
-    color: var(--grey-dark);
+    color: var(--overlay);
     padding: 1.3rem 1rem;
     width: auto;
     display: flex;
@@ -72,10 +72,14 @@
 }
 
 .modal__form--confirm-btn {
-    background-color: var(--red);
+/*     background-color: var(--modal-check); */
     color: var(--white);
     padding: 1.3rem 1.2rem;
     width: auto;
+}
+
+.comfirmButton {
+    background-color: var(--modal-delete);
 }
 
 @media screen and (min-width: 1024px) {

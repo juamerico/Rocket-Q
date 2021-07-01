@@ -28,6 +28,13 @@
         height: 100%;
     }
 
+    .bg-circle {
+        width: 20rem;
+        height: 20rem;
+        top: 68vh;
+        left: 18vw;
+    }
+
     .circle.top {
         width: 63.3rem;
         height: 63.3rem;

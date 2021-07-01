@@ -5,10 +5,10 @@
 .create-room__btn {
     height: 5rem;
     width: 100%;
-    border-radius: .8rem;
+    border-radius: .6rem;
     margin: 0;
 
-    background-color: var(--white);
+    background-color: var(--grey-medium);
     border: .2px solid var(--blue);
     color: var(--blue);
 

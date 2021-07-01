@@ -7,6 +7,7 @@
     margin-bottom: .8rem;
     border-radius: 0 .8rem .8rem .8rem;
     padding: 2.4rem;
+    color: var(--black);
 }
 
 .question-wrapper.read {
@@ -22,10 +23,6 @@
     background-color: var(--blue);
     clip-path: circle();
     padding: 1rem;
-}
-
-.question-wrapper.read .question__user-img {
-    background-color: var(--grey-blue);
 }
 
 .question__content {
@@ -82,6 +79,7 @@
 
 .no-question__description {
     margin-top: 1.3rem;
+    padding-bottom: 1.5rem;
     font-family: 'Open Sans', sans-serif;
     color: var(--grey-dark);
     font-size: 1.4rem;
@@ -101,5 +99,6 @@
 
     .question__actions p {
         display: unset;
+        color: var(--black);
     }
 }

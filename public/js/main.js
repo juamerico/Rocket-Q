@@ -35,8 +35,11 @@ function handleClick(e, check = true) {
     const text = check ? "Marcar como lida" : "Excluir"
     modalTitle.innerHTML = `${text} esta pergunta`
     modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} esta pergunta?`
+
     confirmButton.innerHTML = `Sim, ${text.toLowerCase()}`
-    check ? confirmButton.style.backgroundColor = "#3485FF" : confirmButton.style.backgroundColor = "#E83F5B"
+    const confirmButtonColor = getComputedStyle(document.documentElement).getPropertyValue("--modal-check")
+    const deleteButtonColor = getComputedStyle(document.documentElement).getPropertyValue("--modal-delete")
+    check ? confirmButton.style.backgroundColor = confirmButtonColor : confirmButton.style.backgroundColor = deleteButtonColor
 
     modal.open()
 }

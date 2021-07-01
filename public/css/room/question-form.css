@@ -29,6 +29,7 @@
     outline: none;
     width: 100%;
     height: 8rem;
+    color: var(--qst-inpt);
 }
 
 .question-form__input::placeholder {

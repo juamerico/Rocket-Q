@@ -33,7 +33,7 @@
 }
 
 #room .create-room__btn--textarea {
-    background-color: var(--white);
+    background-color: var(--grey-medium);
     overflow: hidden;
     padding: 0;
     width: 6rem;
